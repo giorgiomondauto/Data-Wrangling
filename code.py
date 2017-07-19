@@ -77,7 +77,7 @@ data_2014.country.ix[range(70,100)] # we have three universities from Switzerald
 #comparing these statistics with ones of 2015 ({national_rank:3, world_rank:92}). 
 pd.concat([data_2014.ix[75],data_2015.ix[92]],axis=1,keys=["2014","2015"])
 #it can be deducted that there have not been huge variations which lead to consider
-#University of Geneva as part of ìlast classî. In so doing, the  missing value is replaced  with the previous one, that is ì6classî.
+#University of Geneva as part of ‚Äúlast class‚Äù. In so doing, the  missing value is replaced  with the previous one, that is ‚Äú6class‚Äù.
 #Besides, the total score has decreased of only 2.04.
 data_2014.ix[75]  # 6class
 data_2015.ix[92,6]="6class"  #alternative way: data_2015=data_2015.replace(np.nan,"6class")
